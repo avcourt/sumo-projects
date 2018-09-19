@@ -1,0 +1,13 @@
+### generate network manually
+netconvert --node-files nodes.nod.xml --edge-files edges.edg.xml -t types.type.xml -o network.net.xml
+
+### convert osm map to sumo network
+netconvert --osm-files map.osm -o osm_net.net.xml
+
+### generate random trips using sumo included python script
+/usr/share/sumo/tools/randomTrips.py -n osm_net.net.xml -e 50
+
+### generate random trips as per rorgues tutorial
+/usr/share/sumo/tools/randomTrips.py -n osm_net.net.xml -r osm.rou.xml -e 50 -l
+
+
