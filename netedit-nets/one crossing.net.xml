@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue 25 Sep 2018 07:12:58 PM CDT by Netedit Version 0.32.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <output>
+        <output-file value="/home/avcourt/Documents/sumo-projects/netedit-nets/one%20crossing.net.xml"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,-100.00,0.00,100.00" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+
+    <edge id=":gneJ3_0" function="internal">
+        <lane id=":gneJ3_0_0" index="0" speed="13.89" length="0.10" shape="-1.65,0.00 -1.65,0.00"/>
+    </edge>
+    <edge id=":gneJ3_1" function="internal">
+        <lane id=":gneJ3_1_0" index="0" speed="13.89" length="0.10" shape="1.65,0.00 1.65,0.00"/>
+    </edge>
+
+    <edge id="-gneE1" from="gneJ3" to="gneJ2" priority="1">
+        <lane id="-gneE1_0" index="0" speed="13.89" length="100.00" shape="1.65,0.00 1.65,100.00"/>
+    </edge>
+    <edge id="-gneE2" from="gneJ4" to="gneJ3" priority="1">
+        <lane id="-gneE2_0" index="0" speed="13.89" length="100.00" shape="1.65,-100.00 1.65,0.00"/>
+    </edge>
+    <edge id="gneE1" from="gneJ2" to="gneJ3" priority="1">
+        <lane id="gneE1_0" index="0" speed="13.89" length="100.00" shape="-1.65,100.00 -1.65,0.00"/>
+    </edge>
+    <edge id="gneE2" from="gneJ3" to="gneJ4" priority="1">
+        <lane id="gneE2_0" index="0" speed="13.89" length="100.00" shape="-1.65,0.00 -1.65,-100.00"/>
+    </edge>
+
+    <junction id="gneJ2" type="dead_end" x="0.00" y="100.00" incLanes="-gneE1_0" intLanes="" shape="-0.05,100.00 3.25,100.00 0.05,100.00"/>
+    <junction id="gneJ3" type="rail_crossing" x="0.00" y="0.00" incLanes="gneE1_0 -gneE2_0" intLanes=":gneJ3_0_0 :gneJ3_1_0" shape="-3.25,0.00 3.25,0.00 -3.25,0.00">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ4" type="dead_end" x="0.00" y="-100.00" incLanes="gneE2_0" intLanes="" shape="0.05,-100.00 -3.25,-100.00 -0.05,-100.00"/>
+
+    <connection from="-gneE2" to="-gneE1" fromLane="0" toLane="0" via=":gneJ3_1_0" tl="gneJ3" linkIndex="1" dir="s" state="o"/>
+    <connection from="gneE1" to="gneE2" fromLane="0" toLane="0" via=":gneJ3_0_0" tl="gneJ3" linkIndex="0" dir="s" state="o"/>
+
+    <connection from=":gneJ3_0" to="gneE2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ3_1" to="-gneE1" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>

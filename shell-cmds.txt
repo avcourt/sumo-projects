@@ -11,3 +11,9 @@ netconvert --osm-files map.osm -o osm_net.net.xml
 /usr/share/sumo/tools/randomTrips.py -n osm_net.net.xml -r osm.rou.xml -e 50 -l
 
 
+### create config file
+
+### configure path settings (temporary)
+export SUMO_HOME="/usr/share/sumo/"
+
+
