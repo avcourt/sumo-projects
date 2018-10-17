@@ -1,0 +1,5 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_-32869655#3_0" lane="-32869655#3_0" length="40.24" pos="1.4155343564e-15"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_326159258#0_0" lane="326159258#0_0" length="250" pos="438.49"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_32869655#2_0" lane="32869655#2_0" length="16.35" pos="1.4155343564e-15"/>
+</additional>
