@@ -1,0 +1,16 @@
+<routes>
+   <vType id="car" 
+   			vClass="passenger" length="5" accel="3.5" decel="2.2" 
+   			sigma="1.0" maxSpeed="5"/>
+   <vType id="car2" 
+      		vClass="emergency" length="5" accel="5.5" decel="2.2" sigma="1.0"
+      		maxSpeed="15" guiShape="emergency" speedFactor="1.4"
+      		minGapLat="0.2"/>
+   <vType id="car3" 
+      		vClass="bus" length="25" accel="5.5" decel="2.2" sigma="1.0"
+      		maxSpeed="2" guiShape="bus"/>
+   <flow id="carflow" type="car" beg="0" end="0" number="5" from="e1" to="e2"/>
+   <flow id="carflow2" type="car2" beg="0" end="0" number="1" from="e1" to="e2"/>
+   <flow id="ns" type="car3" beg="0" end="0" number="1" from="-gneE1" to="-gneE3"/>
+   
+</routes>

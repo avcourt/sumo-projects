@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+       <net-file value="reroute.net.xml"/>
+       <route-files value="reroute.rou.xml"/>
+       <additional-files value="reroute.det.xml"/>
+    </input>
+</configuration>
