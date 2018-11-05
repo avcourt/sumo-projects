@@ -9,4 +9,8 @@
 		   <destProbReroute id="edge1"/>
 		</interval>
 	</rerouter>
+	<e1Detector id="0" lane="gneE11_0" pos="10" freq="30" file="cross.out" friendlyPos="x"/>
+	<e1Detector id="1" lane="gneE8_0" pos="60" freq="30" file="cross.out" friendlyPos="x"/>
+		<e1Detector id="2" lane="gneE8_1" pos="60" freq="30" file="cross.out" friendlyPos="x"/>
+
 </additionals>
