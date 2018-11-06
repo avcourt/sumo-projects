@@ -1,10 +1,10 @@
 <routes>
    <vType id="car" 
    			vClass="passenger" length="5" accel="3.5" decel="2.2" 
-   			sigma="1.0" maxSpeed="5"/>
+   			sigma="1.0" maxSpeed="10"/>
    <vType id="car2" 
       		vClass="emergency" length="5" accel="5.5" decel="2.2" sigma="1.0"
-      		maxSpeed="15" guiShape="emergency" speedFactor="2.0"
+      		maxSpeed="20" guiShape="emergency" speedFactor="2.0"
       		minGapLat="0.2"/>
 
    <flow id="carflow" type="car" beg="0" end="0" number="5" from="edge1" to="edge2"/>
