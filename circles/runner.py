@@ -43,6 +43,12 @@ def run():
 
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
+        if step % 10 == 0:
+            list = traci.inductionloop.getLastStepVehicleIDs("0")
+            print("Time: %d vehicle list.." % step)
+            for veh in list:
+                print(veh)
+
         step += 1
 
     traci.close()
