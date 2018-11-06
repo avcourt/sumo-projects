@@ -1,4 +1,4 @@
- #!/usr/bin/env python
+#!/usr/bin/env python
 
 from __future__ import absolute_import
 from __future__ import print_function
@@ -33,7 +33,7 @@ def run():
             print(veh)
             traci.vehicle.changeLane(veh, 1, 100 )
 
-        step += 100
+        step += 1
 
     traci.close()
     sys.stdout.flush()
