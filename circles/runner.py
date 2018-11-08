@@ -31,7 +31,10 @@ def run():
         print(list)
         for veh in list:
             print(veh)
-            traci.vehicle.changeLane(veh, 1, 100 )
+            traci.vehicle.changeLane(veh, 1, 100)
+
+        if step == 260:
+            traci.vehicle.changeTarget("carflow.4", "gneE14")
 
         step += 1
 
